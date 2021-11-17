@@ -2,7 +2,8 @@
 
 ![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
 
-Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von [Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
+Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von 
+[Frau Dr. Manuela Pötschke FB 05 Universität Kassel](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
 
 Diese Vorlage soll als Stütze dienen, um mit R und R-Studio einen Forschungsbericht zu erstellen.
 
