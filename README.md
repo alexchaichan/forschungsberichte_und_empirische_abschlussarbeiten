@@ -2,7 +2,7 @@
 
 ![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
 
-Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=1665&token=0c73de547cc8e287aafe3e52805f4f14affff49e) von [Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
+Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von [Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
 
 # Instalationsanleitung
 
