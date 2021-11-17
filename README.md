@@ -3,16 +3,27 @@
 ![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
  
  
+ 
+[Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke) 
+ 
  manuela.poetschke@uni-kassel.de
 
 # Instalationsanleitung
 
 
+https://cran.r-project.org/mirrors.html
+
+
+https://www.rstudio.com/products/rstudio/download/#download
+
 ```
 install.packages("rmarkdown")
 ```
 
-https://www.latex-project.org
+
+
+[\LaTeX](https://www.latex-project.org/get/)
+
 
 Allgemeine Hinweise zu Forschungsberichten aus Empiriepraktika (BA, Modul 6), empirischen Seminaren (MA, Modul 3) oder für empirische Abschlussarbeiten (BA, MA):
 Der Umfang des Berichts im Empiriepraktikum ergibt sich aus der Fragestellung und den verwendeten Analyseverfahren. Wenn die Seitenzahl vorgegeben oder vereinbart ist und nicht ausreicht, ist die Forschungsfrage nicht präzise genug formuliert.
