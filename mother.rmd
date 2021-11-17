@@ -2,13 +2,13 @@
 title: "TITLE" #change title here
 subtitle: "SUBTITLE" #change subtitle here
 date: "XX/XX/202X" #change date here
-output: #define the output
-  pdf_document: #outpu=pdf
+output: 
+  pdf_document: 
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/style.sty #include styling
     #keep_tex:  true
-  bookdown::pdf_book: #format
+  bookdown::pdf_book: 
     citation_package: biblatex #natbib #biblatex
 bibliography: literature.bib #include bibliography
 csl: styles/apa.csl #inclue citation styleing
