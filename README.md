@@ -4,6 +4,9 @@
 
 Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von [Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
 
+Diese Vorlage soll das Stütze dienen mit R und R-Studio einen Forschungsbericht zu erstellen.
+
+
 # Instalationsanleitung
 
 Follgende Programme werden benötigt um das Skript zum laufen zu bringen. 
