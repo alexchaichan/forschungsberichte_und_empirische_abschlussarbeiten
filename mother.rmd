@@ -1,0 +1,90 @@
+---
+title: "TITLE" #change title here
+subtitle: "SUBTITLE" #change subtitle here
+date: "XX/XX/202X" #change date here
+output: #define the output
+  pdf_document: #outpu=pdf
+    latex_engine: pdflatex #xelatex #lualatex #pdflatex
+    includes:
+      in_header: styles/style.sty #include styling
+    #keep_tex:  true
+  bookdown::pdf_book: #format
+    citation_package: biblatex #natbib #biblatex
+bibliography: literature.bib #include bibliography
+csl: styles/apa.csl #inclue citation styleing
+lang: de #change language here
+fontsize: 12pt #change font size here #max=12
+---
+
+
+<!-- load libraries + data -->
+```{r message =FALSE, warnings=FALSE, echo = FALSE}
+library(tidyverse) 
+data(starwars) #example dataframe
+```
+
+
+
+
+
+<!-- include title -->
+\pagenumbering{gobble} <!-- disable page numbering   -->
+
+```{r, child=c('children/title.Rmd')}  
+```
+
+\pagebreak <!-- new page -->
+\pagenumbering{roman} <!-- set page numbering to roman numbers -->
+
+<!-- inclde abstract -->
+
+\setstretch{1.5} <!-- line spaceing 1.5-->
+```{r, child=c('children/abstract.Rmd')} 
+```
+
+<!-- inclue lof, lot, toc -->
+
+\setstretch{1} 
+\pagebreak 
+\listoffigures
+
+\pagebreak 
+\listoftables
+
+\pagebreak 
+\tableofcontents
+
+\pagebreak 
+\pagenumbering{arabic} <!-- set page numbering to arabic numbers -->
+
+
+
+
+<!-- include chapter / children -->
+
+\setstretch{1.5} <!-- set line spaceing -->
+```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')} 
+```
+
+
+
+
+<!-- inlude bibliography -->
+
+\pagebreak  
+# Literaturverzeichnis
+<div id="refs"></div>
+
+
+<!-- inlude apendix -->
+
+\pagebreak 
+\pagenumbering{gobble}
+
+# Anhang {-} 
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} <!-- remove page numberging from apendix    -->
+
+```{r, child=c('children/apendix.Rmd')} 
+```
+
