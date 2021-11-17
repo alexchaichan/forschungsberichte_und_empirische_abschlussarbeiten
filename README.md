@@ -22,7 +22,7 @@ install.packages("rmarkdown")
 
 
 
-[\LaTeX](https://www.latex-project.org/get/)
+[$\LaTeX$](https://www.latex-project.org/get/)
 
 
 Allgemeine Hinweise zu Forschungsberichten aus Empiriepraktika (BA, Modul 6), empirischen Seminaren (MA, Modul 3) oder für empirische Abschlussarbeiten (BA, MA):
