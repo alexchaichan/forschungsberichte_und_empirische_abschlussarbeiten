@@ -24,6 +24,8 @@ Sowie das Paket `markdown`
 install.packages("rmarkdown")
 ```
 ---
+---
+---
 
 Allgemeine Hinweise zu Forschungsberichten aus Empiriepraktika (BA, Modul 6), empirischen Seminaren (MA, Modul 3) oder für empirische Abschlussarbeiten (BA, MA):
 Der Umfang des Berichts im Empiriepraktikum ergibt sich aus der Fragestellung und den verwendeten Analyseverfahren. Wenn die Seitenzahl vorgegeben oder vereinbart ist und nicht ausreicht, ist die Forschungsfrage nicht präzise genug formuliert.
