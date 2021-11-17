@@ -20,6 +20,7 @@ https://www.rstudio.com/products/rstudio/download/#download
 install.packages("rmarkdown")
 ```
 
+<img src="https://render.githubusercontent.com/render/math?math=\LaTeX">
 
 
 [$$\LaTeX$$](https://www.latex-project.org/get/)
