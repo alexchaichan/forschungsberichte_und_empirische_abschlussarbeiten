@@ -21,7 +21,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download
 )
 
-Sowie das Paket `markdown`
+Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
 
 ```
 install.packages("rmarkdown")
