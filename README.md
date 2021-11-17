@@ -1,50 +1,28 @@
-<style TYPE="text/css">
-code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
-</style>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
-    }
-});
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
-
-
 # Hinweise für Forschungsberichte und quantitative empirische Abschlussarbeiten
 
 ![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
- 
- 
- 
-[Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke) 
- 
- manuela.poetschke@uni-kassel.de
+
+Dieses Template beinhaltet die Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten von [Frau Dr. Manuela Pötschke](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
 
 # Instalationsanleitung
 
+Follgende Programme werden benötigt um das Skript zum laufen zu bringen. 
 
 
-https://cran.r-project.org/mirrors.html
+[LaTeX](https://www.latex-project.org/get/)
 
 
-https://www.rstudio.com/products/rstudio/download/#download
+[R](https://cran.r-project.org/mirrors.html)
+
+
+[R-Studio](https://www.rstudio.com/products/rstudio/download/#download
+)
+
+Sowie das Paket `markdown`
 
 ```
 install.packages("rmarkdown")
 ```
-
-<img src="https://render.githubusercontent.com/render/math?math=$\LaTeX$">
-
-
-[$$\LaTeX$$](https://www.latex-project.org/get/)
 
 
 Allgemeine Hinweise zu Forschungsberichten aus Empiriepraktika (BA, Modul 6), empirischen Seminaren (MA, Modul 3) oder für empirische Abschlussarbeiten (BA, MA):
