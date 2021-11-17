@@ -10,6 +10,10 @@
 
 # Instalationsanleitung
 
+```math
+SE = \frac{\sigma}{\sqrt{n}}
+```
+
 
 https://cran.r-project.org/mirrors.html
 
