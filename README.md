@@ -10,7 +10,7 @@ Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgeset
 
 
 
-[R Markdown Cookbook Yihui Xie, Christophe Dervieux, Emily Riederer 2021](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen 
+[R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer 2021](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen 
 
 # Instalationsanleitung
 
