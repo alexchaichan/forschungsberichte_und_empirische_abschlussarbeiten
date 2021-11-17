@@ -1,0 +1,8 @@
+
+```{r, child=c('declaration.Rmd')} 
+```
+\pagebreak
+
+# Anhang
+
+<!-- \includepdf[pages=-,openright]{images/FILE.pdf} -->
