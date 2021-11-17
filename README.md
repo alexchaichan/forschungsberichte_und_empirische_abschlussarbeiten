@@ -1,3 +1,6 @@
+![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
+
+
 # Hinweise für Forschungsberichte und quantitative empirische Abschlussarbeiten
 
 Allgemeine Hinweise zu Forschungsberichten aus Empiriepraktika (BA, Modul 6), empirischen Seminaren (MA, Modul 3) oder für empirische Abschlussarbeiten (BA, MA):
