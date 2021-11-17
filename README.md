@@ -19,8 +19,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 [R](https://cran.r-project.org/mirrors.html)
 
 
-[R-Studio](https://www.rstudio.com/products/rstudio/download/#download
-)
+[R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
 
 Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
 
