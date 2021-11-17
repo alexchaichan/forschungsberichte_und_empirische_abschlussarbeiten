@@ -1,0 +1,3 @@
+# Hypothesen
+
+Hypothesen beinhalten oft die Erwartungen über die Wirkungen eines Sachverhalts auf einen anderen. Wir unterscheiden probabilistische „Je...desto“- Hypothesen von deterministischen „wenn ... dann“ – Sätzen. In einigen Fällen werden auch Unterschiede zwischen Gruppen oder das Bestehen von Zusammenhängen zwischen gleichrangigen Sachverhalten als Erwartungen formuliert.

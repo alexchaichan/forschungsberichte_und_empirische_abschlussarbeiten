@@ -1,0 +1,5 @@
+# Operationalisierung und Datenbasis
+
+Operationalisierung bezeichnet den Prozess, aus abstrakten Begriffen, die aus den Hypothesen stammen, messbare Konstrukten in empirischen Instrumenten abzuleiten. Die Konstrukte werden dann als Variablen oder Items bezeichnet. Im Operationalisierungskapitel sollte es eine Übersicht geben, die deutlich macht, welche Variable(n) welches Konstrukt abbilden soll(en), welche Skalierung die Variablen aufweisen und welche Wertelabels die einzelnen Skalenpunkte haben.
+Danach wird die Datenbasis beschrieben. Dieser Aspekt umfasst Informationen dazu, wie viele Elemente im Datensatz enthalten sind, wie die Grundgesamtheit definiert wurde, wie die Stichprobenziehung erfolgte, wie die Datenerhebung erfolgte (Erhebungsform, Zeitraum, regionale Verortung) und unter Umständen, in welchem Format die Daten vorliegen (wide oder long).
+
