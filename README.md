@@ -136,6 +136,3 @@ Unterstützung der Darstellung durch angemessene Grafiken, Tabellen und Abbildu
 </table>
 
 
-## Kompilierte Datei
-
-![](mother.pdf)
