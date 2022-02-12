@@ -30,8 +30,6 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 install.packages("rmarkdown")
 ```
 
-Für Infos besucht das [Wiki](https://github.com/alexchaichan/forschungsberichte_und_empirische_abschlussarbeitenschlussarbeiten/wiki)
-
 ---
 ---
 ---
