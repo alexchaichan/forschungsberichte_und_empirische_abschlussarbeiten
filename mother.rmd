@@ -4,12 +4,14 @@ subtitle: "SUBTITLE" #change subtitle here
 date: "XX/XX/202X" #change date here
 output: 
   pdf_document: 
+    pandoc_args: 
+      - --lua-filter=wordcount.lua #lua-script to count the signs in the body
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/style.sty #include styling
     #keep_tex:  true
   bookdown::pdf_book: 
-    citation_package: biblatex #natbib #biblatex
+    citation_package: biblatex  #natbib #biblatex
 bibliography: literature.bib #include bibliography
 csl: styles/apa.csl #inclue citation styleing
 lang: de #change language here
