@@ -5,13 +5,9 @@
 Im Kapitel zur Deskription werden dem Leser relevante Verteilungen in geeigneter Form präsentiert. Relevante Verteilungen sind solche, die zentrale Variablen aus den Hypothesen darstellen. Die Verteilung der abhängigen Variable zählt in jedem Fall dazu.
 Geeignete Formen der Präsentation von Verteilungen sind Grafiken, Tabellen und statistische Maße zur Beschreibung von typischen Werten und dem Ausmaß an Streuung. Welche Form man wählt, hängt vom Skalenniveau, der Anzahl der Ausprägungen und davon ab, an welche Leserschaft sich der Text richtet. Am wichtigsten ist für die Entscheidung der Darstellungsform die Antwort auf die Frage, wie ein gutes und vollständiges Leseverständnis beim Leser erreicht werden kann.
 
-
 ### Tabelle
 
-Hier folgt ein Beispiel für eine Tabelle und eine Abbildung
-
-
-```{r message =FALSE, warnings=FALSE, echo = FALSE}
+```{r}
 starwars %>%
   select(height,mass) %>% 
   rename(Größe=height,
@@ -23,7 +19,7 @@ starwars %>%
   round(2) %>% 
   knitr::kable(caption="\\label{tab:tab1}Lage und Streuungsmaße von Größe und Gewicht ", booktabs=T) %>% 
   kableExtra::kable_styling(latex_options = c("striped"), position = "center") %>%
-  kableExtra::footnote(general_title ="Datenbasis:" ,general = " ggplott - starwars")
+  kableExtra::footnote(general_title ="Datenbasis: ggplott - starwars")
 ```
 
 In der Tabelle \ref{tab:tab1} sind Lage und Streuungsmaße abgebildet.
@@ -31,27 +27,38 @@ Diese Tabelle wird autoomatisch in das Tabellenverzeichnis mit aufgenommen.
 
 Hier sind weitere Anpassungsmöglichkeiten für Tabellen: [Create Awesome LaTeX Table with knitr::kable and kableExtra](https://haozhu233.github.io/kableExtra/awesome_table_in_pdf.pdf)
 
-
 ### Abbildung
 
-
-
-```{r echo=FALSE, message=FALSE, warning=FALSE, fig.cap="\\label{fig:plt1}Boxplot - Größe in cm",  fig.align="center"}
+```{r fig.cap="\\label{fig:plt1}Boxplot - Größe in cm",  fig.align="center"}
 starwars %>% 
   select(height,mass) %>% 
   rename(Größe=height,
          Gewicht=mass) %>% 
   ggplot(aes(y=Größe)) +
   geom_boxplot() +
-  theme_bw() +
   scale_x_discrete(labels = NULL, breaks = NULL) +
-  labs(title = "Boxplot - Größe in cm", x="", y="Größe in cm", caption = "Datenbasis: ggplot2 - starwars")
+  labs(title = "Boxplot - Größe in cm", x="", y="Größe in cm", caption = "Datenbasis: ggplot2 - starwars") +
+  theme_void()
 ```
 
 In der Abbildung \ref{fig:plt1} sieht man einen Boxplot zur Verteilung der Körpergröße in cm. Auch diese Abbildung wird automatisch in das Abbildungsverzeichnis aufgenommen.
 
-
-
 ## Erklärungsmodelle
 
 Im zweiten Teil der empirischen Analysen können Erklärungsmodelle enthalten sein. Ausgewählt wird das Analyseverfahren zuerst nach dem Skalenniveau der abhängigen Variable. Das Analyseverfahren muss diesem entsprechen, dann ist es angemessen. Außerdem sollten die Modelle so einfach wie möglich und so komplex wie nötig sein. Was nötig ist, ergibt sich aus den Hypothesen und der Forschungsfrage. über die Hypothesen hinausgehende Analysen und Interpretationen sind nur dann angebracht, wenn sich damit eine neue Perspektive auf die Forschungsfrage ergibt.
+
+### Linear Regression Model / Table
+
+```{r results = "asis"}
+model1 <- lm(mass ~  height, data=starwars)
+model2 <- lm(height ~ mass, data=starwars)
+
+stargazer::stargazer(model1, model2, type = "latex", title = "Regressionstabelle - OLS-Regressionen", header = FALSE, notes.align = "l", single.row = TRUE, notes.label = "Notes:", report=('vc*p'), label="tab:linreg1", notes=c(
+  "Abgetragen sind die nicht-standardisierten",
+  "Regressionskoeffizienten einer OLS- Regression.",
+  "Größe in cm",
+  "Gewicht in kg",
+  "Referenzkategorie:")) 
+```
+
+In Tabelle \ref{tab:linreg1} ist eine Beispiel-Tabelle für eine lineare Regression gerechnet.

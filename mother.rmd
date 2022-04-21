@@ -5,7 +5,8 @@ date: "XX/XX/202X" #change date here
 output: 
   pdf_document: 
     pandoc_args: 
-      - --lua-filter=wordcount.lua #lua-script to count the signs in the body
+      - --lua-filter=/Users/user/.local/share/pandoc/filters/wordcount.lua
+      - --metadata=wordcount=process
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/style.sty #include styling
@@ -18,14 +19,40 @@ lang: de #change language here
 fontsize: 12pt #change font size here #max=12
 ---
 
+<!-- this chunk is your setup-chunk  -->
 
-<!-- load libraries + data -->
-```{r message =FALSE, warnings=FALSE, echo = FALSE}
-library(tidyverse) 
-data(starwars) #example dataframe
+```{r setup, include=FALSE}
+ knitr::opts_chunk$set(
+ echo = FALSE,
+ message = FALSE,
+ warning = FALSE
+ )
 ```
 
+<!-- load libraries -->
 
+```{r}
+
+packages <- c("tidyverse","stargazer") # put your used packages in this vector
+
+installed_packages <- packages %in% rownames(installed.packages())
+
+# if the package is installed it has been loaded, if not, it has been installed and then loaded
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+# library all packages from the vector packages
+invisible(lapply(packages, library, character.only = TRUE))
+
+
+```
+
+<!-- load data -->
+
+```{r}
+data(starwars) #example dataframe
+```
 
 
 
