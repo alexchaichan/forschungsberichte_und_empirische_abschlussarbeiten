@@ -28,7 +28,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
 
 
-## Installation via homebrew
+## Installation via [homebrew](https://formulae.brew.sh/)
 
 ```
 # latex
