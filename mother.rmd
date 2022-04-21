@@ -17,6 +17,7 @@ bibliography: literature.bib #include bibliography
 csl: styles/apa.csl #inclue citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
+urlcolor: "blue"
 ---
 
 <!-- this chunk is your setup-chunk  -->
