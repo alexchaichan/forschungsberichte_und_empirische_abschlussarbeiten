@@ -19,10 +19,26 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 [LaTeX](https://www.latex-project.org/get/)
 
 
+
+
 [R](https://cran.r-project.org/mirrors.html)
 
 
+
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
+
+
+## Installation via homebrew
+
+```
+# latex
+brew install --cask basictex
+brew install texlive
+
+# r + rstudio
+brew install r
+brew install --cask rstudio
+```
 
 Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
 
