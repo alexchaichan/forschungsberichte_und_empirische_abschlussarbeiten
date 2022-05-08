@@ -38,7 +38,7 @@ starwars %>%
   geom_boxplot() +
   scale_x_discrete(labels = NULL, breaks = NULL) +
   labs(title = "Boxplot - Größe in cm", x="", y="Größe in cm", caption = "Datenbasis: ggplot2 - starwars") +
-  theme_void()
+  theme_classic()
 ```
 
 In der Abbildung \ref{fig:plt1} sieht man einen Boxplot zur Verteilung der Körpergröße in cm. Auch diese Abbildung wird automatisch in das Abbildungsverzeichnis aufgenommen.
