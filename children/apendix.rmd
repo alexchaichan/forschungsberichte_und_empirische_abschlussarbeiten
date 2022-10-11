@@ -3,6 +3,4 @@
 ```
 \pagebreak
 
-# Anhang
-
 <!-- \includepdf[pages=-,openright]{images/FILE.pdf} -->

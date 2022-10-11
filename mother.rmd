@@ -2,16 +2,16 @@
 title: "TITLE" #change title here
 subtitle: "SUBTITLE" #change subtitle here
 date: "XX/XX/202X" #change date here
-output: 
-  pdf_document: 
-    pandoc_args: 
-      - --lua-filter=/Users/user/.local/share/pandoc/filters/wordcount.lua
+output:
+  pdf_document:
+    pandoc_args:
+      - --lua-filter=wordcount.lua
       - --metadata=wordcount=process
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/style.sty #include styling
     #keep_tex:  true
-  bookdown::pdf_book: 
+  bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: literature.bib #include bibliography
 csl: styles/apa.csl #inclue citation styleing
@@ -46,7 +46,6 @@ if (any(installed_packages == FALSE)) {
 # library all packages from the vector packages
 invisible(lapply(packages, library, character.only = TRUE))
 
-
 ```
 
 <!-- load data -->
@@ -55,12 +54,10 @@ invisible(lapply(packages, library, character.only = TRUE))
 data(starwars) #example dataframe
 ```
 
-
-
 <!-- include title -->
 \pagenumbering{gobble} <!-- disable page numbering   -->
 
-```{r, child=c('children/title.Rmd')}  
+```{r, child=c('children/title.Rmd')}
 ```
 
 \pagebreak <!-- new page -->
@@ -69,52 +66,46 @@ data(starwars) #example dataframe
 <!-- inclde abstract -->
 
 \setstretch{1.5} <!-- line spaceing 1.5-->
-```{r, child=c('children/abstract.Rmd')} 
+```{r, child=c('children/abstract.Rmd')}
 ```
 
 <!-- inclue lof, lot, toc -->
 
-\setstretch{1} 
-\pagebreak 
+\setstretch{1}
+\pagebreak
 \listoffigures
 
-\pagebreak 
+\pagebreak
 \listoftables
 
-\pagebreak 
+\pagebreak
 \tableofcontents
 
-\pagebreak 
+\pagebreak
 \pagenumbering{arabic} <!-- set page numbering to arabic numbers -->
-
-
-
 
 <!-- include chapter / children -->
 
 \setstretch{1.5} <!-- set line spaceing -->
-```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')} 
+```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')}
 ```
-
-
-
 
 <!-- inlude bibliography -->
 
-\pagebreak  
+\pagebreak
 # Literaturverzeichnis
 <div id="refs"></div>
 
-
 <!-- inlude apendix -->
 
-\pagebreak 
+\pagebreak
 \pagenumbering{gobble}
 
-# Anhang {-} 
+# Anhang {-}
 
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} <!-- remove page numberging from apendix    -->
+\thispagestyle{empty}
+\pagenumbering{gobble}
 
-```{r, child=c('children/apendix.Rmd')} 
+```{r, child=c('children/apendix.Rmd')}
 ```
 
