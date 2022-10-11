@@ -2,31 +2,24 @@
 
 ![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
 
-Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von 
-[Frau Dr. Manuela Pötschke FB 05 Universität Kassel](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke). 
+Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von
+[Frau Dr. Manuela Pötschke FB 05 Universität Kassel](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke).
 
 Diese Vorlage soll als Stütze dienen, um mit R und R-Studio einen Forschungsbericht zu erstellen.
 
-Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen 
+Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen
 
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 # Instalationsanleitung
 
-Follgende Programme werden benötigt um das Skript zum laufen zu bringen. 
-
+Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
 [LaTeX](https://www.latex-project.org/get/)
 
-
-
-
 [R](https://cran.r-project.org/mirrors.html)
 
-
-
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
-
 
 ## Installation via [homebrew](https://formulae.brew.sh/)
 
@@ -54,7 +47,6 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 install.packages("rmarkdown")
 ```
 
-
 ---
 
 ## Allgemeine Hinweise
@@ -80,13 +72,10 @@ Lesenden durch einen präzisen und interessanten Schreibstil ein Lesevergnüge
 
 - Der Argumentationsgang muss immer auf die Forschungsfrage bezogen sein. Er folgt einem klaren und durchgängigen „roten Faden“. Exkurse sind deutlich zu machen (z.B. mit spezifi- schem Titel, spezifischer Formatierung oder indem die entsprechenden Passagen in Fußnoten geschrieben werden).
 
-
-
 <br/>
 <br/>
 
 # Bewertungsschema für empirische Haus- und Abschlussarbeiten
-
 
 <table class="tg">
 <thead>
