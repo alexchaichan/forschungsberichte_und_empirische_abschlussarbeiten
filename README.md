@@ -50,7 +50,7 @@ sudo pacman -S r
 
 Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
 
-```
+```{r}
 install.packages("rmarkdown")
 ```
 
