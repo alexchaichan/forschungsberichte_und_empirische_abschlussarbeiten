@@ -19,7 +19,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
 [R](https://cran.r-project.org/mirrors.html)
 
-[R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
+[R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
 
 ## Installation via [homebrew](https://formulae.brew.sh/)
 
