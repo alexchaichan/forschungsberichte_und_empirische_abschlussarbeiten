@@ -1,0 +1,110 @@
+---
+output:
+  pdf_document:
+    number_sections: true
+    pandoc_args:
+      - --lua-filter=wordcount.lua
+      - --metadata=wordcount=process
+    latex_engine: pdflatex #xelatex #lualatex #pdflatex
+    includes:
+      in_header: styles/preamble.tex #include styling
+    keep_tex:  true
+  always_allow_html: true
+  bookdown::pdf_book:
+    citation_package: biblatex  #natbib #biblatex
+bibliography: ["`r paste0(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
+csl: styles/my.csl #inclue citation styleing
+lang: de #change language here
+fontsize: 12pt #change font size here #max=12
+urlcolor: "blue"
+#nocite: '@*'
+#nocite: |
+#  @key1, @key2
+---
+
+```{r setup, include=FALSE}
+ knitr::opts_chunk$set(
+ echo = FALSE,
+ message = FALSE,
+ warning = FALSE
+ )
+```
+
+```{r}
+# automaticly install + library all packages 
+packages <- c("tidyverse", "stargazer") 
+
+installed_packages <- packages %in% rownames(installed.packages())
+
+if (any(installed_packages == FALSE)) {
+  install.packages(packages[!installed_packages])
+}
+
+invisible(lapply(packages, library, character.only = TRUE))
+```
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(.packages(), 'knitr', 'rmarkdown'),
+                 'bib/packages.bib')
+```
+
+<!-- begin title -->
+\pagenumbering{gobble}
+```{r, child=c('children/title.Rmd')}
+```
+\pagebreak
+\afterpage{\blankpage}
+<!-- end title -->
+
+<!-- begin list of content -->
+\setstretch{1}
+\pagenumbering{roman}
+
+\pagebreak
+\afterpage{\blankpage}
+
+\listoffigures
+
+\pagebreak
+\afterpage{\blankpage}
+
+\listoftables
+
+\pagebreak
+\afterpage{\blankpage}
+
+\tableofcontents
+
+\pagebreak
+\afterpage{\blankpage}
+<!-- end list of content -->
+
+\setstretch{1.5} <!-- line spaceing 1.5-->
+
+<!-- begin abstract -->
+\pagenumbering{gobble}
+```{r, child=c('children/abstract.Rmd')}
+```
+\pagebreak
+<!-- end abstract -->
+
+<!-- begin body -->
+\pagenumbering{arabic}
+```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')}
+```
+<!-- end body -->
+
+
+<!-- inlude bibliography -->
+\pagebreak
+# Literaturverzeichnis 
+<div id="refs"></div>
+
+<!-- inlude apendix -->
+\pagebreak
+\pagenumbering{gobble}
+
+# Anhang {-}
+\thispagestyle{empty}
+\pagenumbering{gobble}
