@@ -11,7 +11,7 @@ Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgeset
 
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
-# Instalationsanleitung
+# Installationsanleitung
 
 Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
