@@ -4,6 +4,7 @@ subtitle: "SUBTITLE" #change subtitle here
 date: "XX/XX/202X" #change date here
 output:
   pdf_document:
+  number_sections: true
     pandoc_args:
       - --lua-filter=wordcount.lua
       - --metadata=wordcount=process
