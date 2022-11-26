@@ -10,12 +10,12 @@ output:
       - --metadata=wordcount=process
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
-      in_header: styles/style.sty #include styling
+      in_header: styles/preamble.tex #include styling
     #keep_tex:  true
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
-csl: styles/apa.csl #inclue citation styleing
+csl: styles/my.csl #inclue citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
 urlcolor: "blue"
@@ -116,4 +116,3 @@ data(starwars) #example dataframe
 
 ```{r, child=c('children/apendix.Rmd')}
 ```
-
