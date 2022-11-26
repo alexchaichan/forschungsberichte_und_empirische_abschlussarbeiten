@@ -23,7 +23,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
 ## Installation via [homebrew](https://formulae.brew.sh/)
 
-```
+```{bash}
 # latex
 brew install --cask basictex
 brew install texlive
@@ -35,7 +35,7 @@ brew install --cask rstudio
 
 ## Installation via [pacman](https://wiki.archlinux.org/title/pacman)
 
-```
+```{bash}
 sudo pacman -S texinfo texlive-core texlive-latexextra texlive-science r
 ```
 
