@@ -13,7 +13,7 @@ output:
     #keep_tex:  true
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
-bibliography: literature.bib #include bibliography
+bibliography: [literature.bib, packages.bib] #include bibliography files
 csl: styles/apa.csl #inclue citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
@@ -46,6 +46,13 @@ if (any(installed_packages == FALSE)) {
 # library all packages from the vector packages
 invisible(lapply(packages, library, character.only = TRUE))
 
+```
+
+<!-- automatically create a bib database for R packages -->
+
+```{r include=FALSE}
+knitr::write_bib(c(.packages(), 'knitr', 'rmarkdown'),
+                 'packages.bib')
 ```
 
 <!-- load data -->
