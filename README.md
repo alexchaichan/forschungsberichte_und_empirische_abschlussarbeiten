@@ -21,7 +21,7 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere IDE
 
-- alternartiv kann auch der Code in der R-Konsole verwendet werden `rmarkdown::render("/path/to/mother.rmd", "pdf_document")`
+- alternartiv kann auch der Code in der R-Konsole verwendet werden, um die PDF-Datei zu erzeugen `rmarkdown::render("/path/to/mother.rmd", "pdf_document")`
 
 ## Installation via [homebrew](https://formulae.brew.sh/)
 
