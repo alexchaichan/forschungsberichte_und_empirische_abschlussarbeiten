@@ -33,7 +33,7 @@ brew install r
 brew install --cask rstudio
 ```
 
-## Instalation via [pacman](https://wiki.archlinux.org/title/pacman)
+## Installation via [pacman](https://wiki.archlinux.org/title/pacman)
 
 ```
 sudo pacman -S texinfo texlive-core texlive-latexextra texlive-science r
