@@ -13,7 +13,7 @@ output:
     #keep_tex:  true
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
-bibliography: [literature.bib, packages.bib] #include bibliography files
+bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
 csl: styles/apa.csl #inclue citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
