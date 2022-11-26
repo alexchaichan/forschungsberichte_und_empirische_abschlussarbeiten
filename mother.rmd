@@ -15,7 +15,7 @@ output:
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
-csl: styles/my.csl #inclue citation styleing
+csl: styles/my.csl #include citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
 urlcolor: "blue"
