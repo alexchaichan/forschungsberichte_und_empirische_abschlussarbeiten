@@ -11,7 +11,7 @@ output:
     latex_engine: pdflatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/preamble.tex #include styling
-    #keep_tex:  true
+    keep_tex:  false
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
