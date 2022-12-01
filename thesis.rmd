@@ -51,7 +51,7 @@ knitr::write_bib(c(.packages(), 'knitr', 'rmarkdown'),
 
 <!-- begin title -->
 \pagenumbering{gobble}
-```{r, child=c('children/title.Rmd')}
+```{r, child=c('children/000title.Rmd')}
 ```
 \pagebreak
 \afterpage{\blankpage}
@@ -78,20 +78,33 @@ knitr::write_bib(c(.packages(), 'knitr', 'rmarkdown'),
 
 \pagebreak
 \afterpage{\blankpage}
+
+
+<!-- comment in if you use abbreviations use like in example-->
+<!-- 
+
+```{r, child=c('children/001abbreviations.rmd')}
+```
+
+Some text \ac{rmd}
+
+\pagebreak
+\afterpage{\blankpage}
+-->
 <!-- end list of content -->
 
 \setstretch{1.5} <!-- line spaceing 1.5-->
 
 <!-- begin abstract -->
 \pagenumbering{gobble}
-```{r, child=c('children/abstract.Rmd')}
+```{r, child=c('children/002abstract.Rmd')}
 ```
 \pagebreak
 <!-- end abstract -->
 
 <!-- begin body -->
 \pagenumbering{arabic}
-```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')}
+```{r, child=c('children/010introduction.rmd', 'children/020literature_review.rmd', 'children/030hypotheses.rmd', 'children/040operationalization.rmd', 'children/050analysis.rmd', 'children/060conclusion.rmd')}
 ```
 <!-- end body -->
 

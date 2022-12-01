@@ -65,19 +65,19 @@ data(starwars) #example dataframe
 <!-- include title -->
 \pagenumbering{gobble} <!-- disable page numbering   -->
 
-```{r, child=c('children/title.Rmd')}
+```{r, child=c('children/000title.Rmd')}
 ```
 
 \pagebreak <!-- new page -->
 \pagenumbering{roman} <!-- set page numbering to roman numbers -->
 
-<!-- inclde abstract -->
+<!-- include abstract -->
 
 \setstretch{1.5} <!-- line spaceing 1.5-->
-```{r, child=c('children/abstract.Rmd')}
+```{r, child=c('children/001abstract.Rmd')}
 ```
 
-<!-- inclue lof, lot, toc -->
+<!-- include lof, lot, toc -->
 
 \setstretch{1}
 \pagebreak
@@ -90,21 +90,33 @@ data(starwars) #example dataframe
 \tableofcontents
 
 \pagebreak
+\afterpage{\blankpage}
+
+<!-- comment in if you use abbreviations use like in example-->
+<!-- 
+
+```{r, child=c('children/002abbreviations.rmd')}
+```
+
+Some text \ac{rmd}
+-->
+
+\pagebreak
 \pagenumbering{arabic} <!-- set page numbering to arabic numbers -->
 
 <!-- include chapter / children -->
 
 \setstretch{1.5} <!-- set line spaceing -->
-```{r, child=c('children/introduction.rmd', 'children/literature_review.rmd', 'children/hypotheses.rmd', 'children/operationalization.rmd', 'children/analysis.rmd', 'children/conclusion.rmd')}
+```{r, child=c('children/010introduction.rmd', 'children/020literature_review.rmd', 'children/030hypotheses.rmd', 'children/040operationalization.rmd', 'children/050analysis.rmd', 'children/060conclusion.rmd')}
 ```
 
-<!-- inlude bibliography -->
+<!-- include bibliography -->
 
 \pagebreak
 # Literaturverzeichnis
 <div id="refs"></div>
 
-<!-- inlude apendix -->
+<!-- include apendix -->
 
 \pagebreak
 \pagenumbering{gobble}
@@ -114,5 +126,5 @@ data(starwars) #example dataframe
 \thispagestyle{empty}
 \pagenumbering{gobble}
 
-```{r, child=c('children/apendix.Rmd')}
+```{r, child=c('children/999apendix.Rmd')}
 ```
