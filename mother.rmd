@@ -53,7 +53,7 @@ invisible(lapply(packages, library, character.only = TRUE))
 
 ```{r include=FALSE}
 knitr::write_bib(c(.packages(), 'knitr', 'rmarkdown'),
-                 'packages.bib')
+                 'bib/packages.bib')
 ```
 
 <!-- load data -->
