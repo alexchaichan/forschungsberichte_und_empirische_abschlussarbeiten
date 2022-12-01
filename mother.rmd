@@ -4,7 +4,7 @@ subtitle: "SUBTITLE" #change subtitle here
 date: "XX/XX/202X" #change date here
 output:
   pdf_document:
-  number_sections: true
+    number_sections: true
     pandoc_args:
       - --lua-filter=wordcount.lua
       - --metadata=wordcount=process
@@ -35,7 +35,7 @@ urlcolor: "blue"
 
 ```{r}
 
-packages <- c("tidyverse","stargazer") # put your used packages in this vector
+packages <- c("tidyverse", "stargazer") # put your used packages in this vector
 
 installed_packages <- packages %in% rownames(installed.packages())
 
@@ -74,7 +74,7 @@ data(starwars) #example dataframe
 <!-- include abstract -->
 
 \setstretch{1.5} <!-- line spaceing 1.5-->
-```{r, child=c('children/001abstract.Rmd')}
+```{r, child=c('children/002abstract.Rmd')}
 ```
 
 <!-- include lof, lot, toc -->
@@ -95,7 +95,7 @@ data(starwars) #example dataframe
 <!-- comment in if you use abbreviations use like in example-->
 <!-- 
 
-```{r, child=c('children/002abbreviations.rmd')}
+```{r, child=c('children/001abbreviations.rmd')}
 ```
 
 Some text \ac{rmd}
