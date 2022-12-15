@@ -7,7 +7,7 @@ Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberich
 
 Diese Vorlage soll als Stütze dienen, um mit R und R-Studio einen Forschungsbericht zu erstellen.
 
-Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen
+Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen.
 
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
