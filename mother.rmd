@@ -29,6 +29,10 @@ urlcolor: "blue"
  message = FALSE,
  warning = FALSE
  )
+
+knitr::knit_hooks$set(inline = function(x) {   if(!is.numeric(x)){     x   }else{    prettyNum(round(x,2), big.mark=".")    } })
+
+options("scipen" = 100, "digits" = 4)
 ```
 
 <!-- load libraries -->
@@ -93,7 +97,7 @@ data(starwars) #example dataframe
 \afterpage{\blankpage}
 
 <!-- comment in if you use abbreviations use like in example-->
-<!-- 
+<!--
 
 ```{r, child=c('children/001abbreviations.rmd')}
 ```
