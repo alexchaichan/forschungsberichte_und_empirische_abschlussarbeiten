@@ -45,8 +45,8 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 install.packages("rmarkdown")
 ```
 
-![](latex_image.png)
-
+![](latex_image.jpeg)
+Quelle: Universität Bamberg Fachschaft WIAI
 ---
 
 ## Allgemeine Hinweise
