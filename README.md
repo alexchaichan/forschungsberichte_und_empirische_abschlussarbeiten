@@ -48,7 +48,7 @@ install.packages("rmarkdown")
 ## Hilfreiche Websites zur Unterstützung
 
 - [Tabellen Generator Latex](https://www.tablesgenerator.com/)
-- [doi zu bib generator](https://www.doi2bib.org/)
+- [doi zu bib Generator](https://www.doi2bib.org/)
 - [Mathematische Latex Ausdrücke](https://detexify.kirelabs.org/classify.html)
 - [ChatGPT kennt sich sehr gut mit Programmiersprachen aus ;)](https://chat.openai.com/chat/)
 
