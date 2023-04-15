@@ -45,6 +45,13 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 install.packages("rmarkdown")
 ```
 
+## Hilfreiche Websites zur Unterstützung
+
+- [Tabellen Generator Latex](https://www.tablesgenerator.com/)
+- [doi zu bib generator](https://www.doi2bib.org/)
+- [Mathematische Latex Ausdrücke](https://detexify.kirelabs.org/classify.html)
+- [ChatGPT kennt sich sehr gut mit Programmiersprachen aus ;)](https://chat.openai.com/chat/)
+
 ![](latex_image.jpeg)
 
 `Quelle: Universität Bamberg Fachschaft WIAI`
