@@ -47,7 +47,8 @@ install.packages("rmarkdown")
 
 ![](latex_image.jpeg)
 
-Quelle: Universität Bamberg Fachschaft WIAI
+`Quelle: Universität Bamberg Fachschaft WIAI`
+
 ---
 
 ## Allgemeine Hinweise
