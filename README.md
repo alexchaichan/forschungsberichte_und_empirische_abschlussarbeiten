@@ -11,6 +11,8 @@ Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgeset
 
 ![](rmarkdown_alison_horst.png)
 
+`Quelle: https://allisonhorst.com/r-packages-functions`
+
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 # Installationsanleitung
