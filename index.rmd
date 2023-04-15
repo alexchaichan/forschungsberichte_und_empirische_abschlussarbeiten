@@ -6,40 +6,34 @@ output:
   pdf_document:
     number_sections: true
     pandoc_args:
-      - --lua-filter=wordcount.lua
+      - --lua-filter=scripts/first-line-indent.lua
+      - --lua-filter=scripts/wordcount.lua
       - --metadata=wordcount=process
-    latex_engine: pdflatex #xelatex #lualatex #pdflatex
+    latex_engine: xelatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/preamble.tex #include styling
     keep_tex:  false
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
-csl: styles/my.csl #include citation styleing
+csl: styles/csl.csl #include citation styleing
 lang: de #change language here
 fontsize: 12pt #change font size here #max=12
-urlcolor: "blue"
+urlcolor: "magenta"
 ---
 
 <!-- this chunk is your setup-chunk  -->
 
 ```{r setup, include=FALSE}
- knitr::opts_chunk$set(
- echo = FALSE,
- message = FALSE,
- warning = FALSE
- )
 
-knitr::knit_hooks$set(inline = function(x) {   if(!is.numeric(x)){     x   }else{    prettyNum(round(x,2), big.mark=".")    } })
+knitr::opts_chunk$set(
+	echo = FALSE,
+	message = FALSE,
+	warning = FALSE
+)
 
-options("scipen" = 100, "digits" = 4)
-```
-
-<!-- load libraries -->
-
-```{r}
-
-packages <- c("tidyverse", "stargazer") # put your used packages in this vector
+# load libraries
+packages <- c("tidyverse", "stargazer", "here", "markdown") # put your used packages in this vector
 
 installed_packages <- packages %in% rownames(installed.packages())
 
@@ -51,7 +45,24 @@ if (any(installed_packages == FALSE)) {
 # library all packages from the vector packages
 invisible(lapply(packages, library, character.only = TRUE))
 
+
+knitr::knit_hooks$set(
+  inline = function(x) {
+    if (!is.numeric(x)) {
+      x
+    } else{
+      prettyNum(round(x, 2), big.mark = " ")
+    }
+  }
+)
+
+options("scipen" = 100, "digits" = 4)
+
+options(qwraps2_markup = "latex") #markdown
+
+theme_set(theme_classic())
 ```
+
 
 <!-- automatically create a bib database for R packages -->
 
@@ -67,57 +78,70 @@ data(starwars) #example dataframe
 ```
 
 <!-- include title -->
-\pagenumbering{gobble} <!-- disable page numbering   -->
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.0pt}
+\pagenumbering{gobble}
 
-```{r, child=c('children/000title.Rmd')}
+<!-- begin title -->
+\thispagestyle{empty}
+```{r, child=c('children/000title.rmd')}
 ```
+\pagebreak
+<!-- end title -->
 
-\pagebreak <!-- new page -->
-\pagenumbering{roman} <!-- set page numbering to roman numbers -->
+<!-- set header options -->
+\fancyfoot{}
+\fancyhead[R]{\thepage}
+
+
 
 <!-- include abstract -->
 
 \setstretch{1.5} <!-- line spaceing 1.5-->
 ```{r, child=c('children/002abstract.Rmd')}
 ```
-
-<!-- include lof, lot, toc -->
+\pagebreak
+<!-- include list of abbreviations lof, lot, toc -->
 
 \setstretch{1}
-\pagebreak
+\pagenumbering{roman} <!-- set page numbering to roman numbers -->
+
 \listoffigures
-
 \pagebreak
+
 \listoftables
-
 \pagebreak
+
+\printacronyms[name=Abkürzungsverzeichnis]
+\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
+\pagebreak
+
 \tableofcontents
-
 \pagebreak
-\afterpage{\blankpage}
 
-<!-- comment in if you use abbreviations use like in example-->
-<!--
 
-```{r, child=c('children/001abbreviations.rmd')}
-```
-
-Some text \ac{rmd}
--->
-
-\pagebreak
-\pagenumbering{arabic} <!-- set page numbering to arabic numbers -->
+<!-- begin body -->
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+\setstretch{1.5} <!-- set line spaceing -->
 
 <!-- include chapter / children -->
-
-\setstretch{1.5} <!-- set line spaceing -->
 ```{r, child=c('children/010introduction.rmd', 'children/020literature_review.rmd', 'children/030hypotheses.rmd', 'children/040operationalization.rmd', 'children/050analysis.rmd', 'children/060conclusion.rmd')}
 ```
+<!-- end body -->
 
-<!-- include bibliography -->
 
+<!-- inlude bibliography -->
 \pagebreak
-# Literaturverzeichnis
+\fancyhead{}
+\fancyhead[R]{\thepage}
+# Literaturverzeichnis {-}
 <div id="refs"></div>
 
 <!-- include apendix -->

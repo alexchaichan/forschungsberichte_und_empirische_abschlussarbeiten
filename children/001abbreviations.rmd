@@ -1,5 +1,0 @@
-# Abkürzungsverzeichnis {-}
-
-\begin{acronym}
-  \acro{rmd}{R-Markdown}
-\end{acronym}

@@ -18,9 +18,9 @@ starwars %>%
   select(n, mean, median, sd, min,max,range) %>% 
   round(2) %>% 
   knitr::kable(caption="\\label{tab:tab1}Lage und Streuungsmaße von Größe und Gewicht ", booktabs=T) %>% 
-  kableExtra::kable_styling(latex_options = c("striped"), position = "center") %>%
-  kableExtra::footnote(general_title ="Datenbasis: ggplott - starwars")
+  kableExtra::kable_styling(latex_options = c("striped"), position = "center")
 ```
+
 
 In der Tabelle \ref{tab:tab1} sind Lage und Streuungsmaße abgebildet.
 Diese Tabelle wird autoomatisch in das Tabellenverzeichnis mit aufgenommen.
@@ -37,9 +37,11 @@ starwars %>%
   ggplot(aes(y=Größe)) +
   geom_boxplot() +
   scale_x_discrete(labels = NULL, breaks = NULL) +
-  labs(title = "Boxplot - Größe in cm", x="", y="Größe in cm", caption = "Datenbasis: ggplot2 - starwars") +
+  labs(title = "Boxplot - Größe in cm", x="", y="Größe in cm") +
   theme_classic()
 ```
+\noindent\textit{Quelle: Eigene Darstellung - Daten: ggplot2 - starwars}\vspace{1em}
+
 
 In der Abbildung \ref{fig:plt1} sieht man einen Boxplot zur Verteilung der Körpergröße in cm. Auch diese Abbildung wird automatisch in das Abbildungsverzeichnis aufgenommen.
 
@@ -60,5 +62,6 @@ stargazer::stargazer(model1, model2, type = "latex", title = "Regressionstabelle
   "Gewicht in kg",
   "Referenzkategorie:")) 
 ```
+
 
 In Tabelle \ref{tab:linreg1} ist eine Beispiel-Tabelle für eine lineare Regression gerechnet.

@@ -5,3 +5,26 @@ Die Einleitung beinhaltet drei Elemente:
 - Begründung der soziologischen Relevanz des Themas
 - Konkrete Forschungsfrage der Arbeit
 - Beschreibung des Fortgangs der Argumentation im weiteren Verlauf der Arbeit
+
+#### Beispiel zum Verwenden von Abkürzungen
+
+Im Ordner `children` befindet sich eine Datei mit dem Namen `001abbreviations.tex`.
+Darin werden die Abkürzungen angelegt und mit dem Befehl `\ac{X}` aufgerufen.
+
+Nachfolgend ein Beispiel:
+
+\ac{FE}
+
+
+#### Beispiel zum Zitieren
+
+Im ordner `bib` befindert sich eine Datei mit dem Namen `literature.bib`
+Nach dem Muster müssen die Quellen angelegt werden und werden mit dem folgenden befehl abgerufen `[@X]`
+
+Nachfolgend ein Beispiel:
+
+Ein Super Buch um R-Markdown zu lernen [@xie2018].
+
+@wickham2017 erklären hier sehr gut, wie R für Data Science genutzt werden kann.
+
+Alles großartige Werke [@long2019; @xie2018; @wickham2017]
