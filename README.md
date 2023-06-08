@@ -9,10 +9,6 @@ Diese Vorlage soll als Stütze dienen, um mit R und R-Studio einen Forschungsber
 
 Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen.
 
-![](rmarkdown_alison_horst.png)
-
-`Quelle: https://allisonhorst.com/r-packages-functions`
-
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 # Installationsanleitung
@@ -48,16 +44,6 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 ```{r}
 install.packages("rmarkdown")
 ```
-
-## Hilfreiche Websites zur Unterstützung
-
-- [Tabellen Generator Latex](https://www.tablesgenerator.com/)
-- [doi zu bib Generator](https://www.doi2bib.org/)
-- [Mathematische Latex Ausdrücke](https://detexify.kirelabs.org/classify.html)
-
-![](latex_image.jpeg)
-
-`Quelle: Universität Bamberg Fachschaft WIAI`
 
 ---
 

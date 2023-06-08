@@ -1,13 +1,13 @@
 \setlength{\parindent}{0pt}
 # Ehrenwörtliche Erklärung 
 
-NAME
+`r paste0(yaml$author)`
 
-MATRIKELNUMMER
+Matrikelnummer: `r paste0(yaml$matriculation_number)`
 
-Semester
+HF: `r paste0(yaml$subject)` \hspace{1em} 
 
-Haupt + Nebenfach
+NF: `r paste0(yaml$subject2)`
 
 \vskip1cm
 
@@ -15,9 +15,9 @@ Hiermit bestätigen ich, dass ich die vorliegende Arbeit mit dem Titel
 \vskip0.5em
 
 \begin{center}
-\textbf{TITLE}
+\textbf{`r paste0(yaml$title)`}
 
-\textit{SUBTITLE}
+\textit{`r paste0(yaml$subtitle)`}
 \rule{16.75cm}{0.4pt}
 \end{center}
 eigenständig angefertigt und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben. Des Weiteren erklären ich, dass ich alle wörtlichen und indirekten Zitate sowie Grafiken, Tabellen und Abbildungen aus den angegebenen Quellen und Hilfsmitteln korrekt gekennzeichnet haben.
@@ -27,4 +27,4 @@ Mir ist bekannt, dass ein Verstoß gegen diese Regeln als Plagiat betrachtet wir
 
 \vskip1cm
 \rule{5cm}{0.4pt}
-ORT, DATUM 
+`r paste0(yaml$location)`, `r paste0(yaml$date)` 

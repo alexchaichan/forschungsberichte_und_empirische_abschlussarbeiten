@@ -1,30 +1,25 @@
-
-**Seminararbeit von:**
+\setstretch{1.25}
 
 \vskip0.25cm
 
-NAME
+Matrikelnummer: `r paste0(yaml$matriculation_number)` \hspace{1em} 
 
-MATRIKELNUMMER \hspace{1em} 
+\href{mailto:`r paste0(yaml$mail)`}{\uline{`r paste0(yaml$mail)`}} \hspace{1em} 
 
-ADRESSE
+HF: `r paste0(yaml$subject)` \hspace{1em} 
 
-MAIL \hspace{1em} 
-
-TEL.NR.
-
-HF:  - X. Fachsemester \hspace{1em} 
-
-NF:  - X. Fachsemester
+NF: `r paste0(yaml$subject2)`
 
 \vskip0.5cm
 
 \vfill
 
-NAME_KURS
+`r paste0(yaml$module)`
 
-Frau / Herr Prof. Dr. NACHNAME, VORNAME 
+`r paste0(yaml$class)`
 
-Universität Kassel
+`r paste0(yaml$lecturer)`
 
-Fachbereich 05 Geselschaftswissenschaften
+`r paste0(yaml$university)`
+
+`r paste0(yaml$faculty)`

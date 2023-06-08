@@ -1,10 +1,21 @@
 ---
 title: "TITLE" #change title here
 subtitle: "SUBTITLE" #change subtitle here
+author: "Nachname, Vorname"
+mail: "uk123456@student.uni-kassel.de"
 date: "XX/XX/202X" #change date here
-output:
+location: "Kassel"
+subject: "ABC - X. Fachsemester"
+subject2: "XYZ - X. Fachsemester"
+matriculation_number: "12345678"
+university: "Universität Kassel"
+lecturer: "Frau / Herr / Dr. / Prof. "
+faculty: "Fachbereich 05 Geselschaftswissenschaften"
+module : "NAME MODUL"
+class: "NAME KURS"
+output: 
   pdf_document:
-    number_sections: true
+    number_sections: false 
     pandoc_args:
       - --lua-filter=scripts/first-line-indent.lua
       - --lua-filter=scripts/wordcount.lua
@@ -12,7 +23,7 @@ output:
     latex_engine: xelatex #xelatex #lualatex #pdflatex
     includes:
       in_header: styles/preamble.tex #include styling
-    keep_tex:  false
+    keep_tex: false
   bookdown::pdf_book:
     citation_package: biblatex  #natbib #biblatex
 bibliography: ["`r paste(list.files(path = 'bib', pattern = '^.+\\.bib$', full.names = TRUE), collapse='\",\"')`"]
@@ -32,18 +43,11 @@ knitr::opts_chunk$set(
 	warning = FALSE
 )
 
-# load libraries
-packages <- c("tidyverse", "stargazer", "here", "markdown") # put your used packages in this vector
+library(tidyverse)
+library(rmarkdown)
 
-installed_packages <- packages %in% rownames(installed.packages())
-
-# if the package is installed it has been loaded, if not, it has been installed and then loaded
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-}
-
-# library all packages from the vector packages
-invisible(lapply(packages, library, character.only = TRUE))
+# get information from YAML header
+yaml <- yaml_front_matter("index.Rmd")
 
 
 knitr::knit_hooks$set(
