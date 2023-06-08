@@ -46,7 +46,7 @@ install.packages("rmarkdown")
 ```
 
 Es wird empfohlen mit [renv](https://rstudio.github.io/renv/articles/renv.html) zu arbeiten.
-Hierfür einfach den Befehl `r renv::restore()` im Directory ausführen.
+Hierfür einfach den Befehl `renv::restore()` im Directory ausführen.
 
 
 ---
