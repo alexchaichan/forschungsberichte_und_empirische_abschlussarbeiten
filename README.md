@@ -45,6 +45,10 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 install.packages("rmarkdown")
 ```
 
+Es wird empfohlen mit [renv](https://rstudio.github.io/renv/articles/renv.html) zu arbeiten.
+Hierfür einfach den Befehl `r renv::restore()` im Directory ausführen.
+
+
 ---
 
 ## Allgemeine Hinweise
