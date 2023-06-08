@@ -15,7 +15,7 @@ module : "NAME MODUL"
 class: "NAME KURS"
 output: 
   pdf_document:
-    number_sections: false 
+    number_sections: true 
     pandoc_args:
       - --lua-filter=scripts/first-line-indent.lua
       - --lua-filter=scripts/wordcount.lua
@@ -44,10 +44,9 @@ knitr::opts_chunk$set(
 )
 
 library(tidyverse)
-library(rmarkdown)
 
 # get information from YAML header
-yaml <- yaml_front_matter("index.Rmd")
+yaml <- rmarkdown::yaml_front_matter("index.Rmd")
 
 
 knitr::knit_hooks$set(
