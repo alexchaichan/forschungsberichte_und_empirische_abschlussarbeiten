@@ -41,13 +41,14 @@ sudo pacman -S texinfo texlive-core texlive-latexextra texlive-science r
 
 Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
 
+Außerdem wird empfohlen mit [renv](https://rstudio.github.io/renv/articles/renv.html) zu arbeiten.
+
+
 ```{r}
-install.packages("rmarkdown")
+install.packages(c("rmarkdown", "renv"))
 ```
 
-Es wird empfohlen mit [renv](https://rstudio.github.io/renv/articles/renv.html) zu arbeiten.
-Hierfür einfach den Befehl `renv::restore()` im Directory ausführen.
-
+Nach dem installieren der Pakete den Befehl `renv::restore()` im Directory ausführen.
 
 ---
 
