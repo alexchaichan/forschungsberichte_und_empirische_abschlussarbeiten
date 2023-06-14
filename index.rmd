@@ -47,6 +47,8 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 
+here::i_am("index.rmd")
+
 # get information from YAML header
 yaml <- rmarkdown::yaml_front_matter("index.Rmd")
 
