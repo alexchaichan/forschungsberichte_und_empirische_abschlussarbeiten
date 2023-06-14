@@ -1,6 +1,6 @@
 # Hinweise für Forschungsberichte und quantitative empirische Abschlussarbeiten
 
-![](UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
+![](images/UNI_Kassel_FB_Gesellschaftswissenschaften_Farbe_klein.png)
 
 Dieses Template beinhaltet die [Hinweise für das Verfassen von Forschungsberichten und quantitativen empirische Abschlussarbeiten](https://www.uni-kassel.de/fb05/index.php?eID=dumpFile&t=f&f=476&token=1ae8c6038ddadd3c07822dded7cc19b0223a195a) von
 [Frau Dr. Manuela Pötschke FB 05 Universität Kassel](https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/angewandte-statistik/team/dr-manuela-poetschke).
@@ -10,6 +10,9 @@ Diese Vorlage soll als Stütze dienen, um mit R und R-Studio einen Forschungsber
 Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgesetzt. Als Einstiegsliteratur wird [R Markdown Cookbook: Yihui Xie, Christophe Dervieux, Emily Riederer (2021)](https://bookdown.org/yihui/rmarkdown-cookbook/) empfohlen.
 
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
+
+![](images/rmarkdown_alison_horst.png)
+`Quelle: https://github.com/allisonhorst/stats-illustrations`
 
 # Installationsanleitung
 
@@ -49,6 +52,9 @@ install.packages(c("rmarkdown", "renv"))
 ```
 
 Nach dem installieren der Pakete den Befehl `renv::restore()` im Directory ausführen.
+
+![](iamges/latex_image.jpeg)
+`Quelle: Universität Bamberg`
 
 ---
 
