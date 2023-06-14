@@ -15,6 +15,7 @@ module : "NAME MODUL"
 class: "NAME KURS"
 output: 
   pdf_document:
+    toc_depth: 5
     number_sections: true 
     pandoc_args:
       - --lua-filter=scripts/first-line-indent.lua
@@ -120,6 +121,7 @@ data(starwars) #example dataframe
 \addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 \pagebreak
 
+\setcounter{tocdepth}{`r paste0(yaml$output$pdf_document$toc_depth)`}
 \tableofcontents
 \pagebreak
 
