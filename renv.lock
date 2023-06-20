@@ -184,7 +184,7 @@
       "RemoteRepo": "bslib",
       "RemoteUsername": "rstudio",
       "RemoteRef": "HEAD",
-      "RemoteSha": "e2de14ea9a8b6c4ef5299cc03e64b4c850391c66",
+      "RemoteSha": "70e602be54ab9850de9db43ee1a34376a99bbc59",
       "Requirements": [
         "R",
         "base64enc",
@@ -198,7 +198,7 @@
         "rlang",
         "sass"
       ],
-      "Hash": "1cc2b31f07364f5e77cfe54d17a9f3e6"
+      "Hash": "1207f6368d749f2850120dd1e61da374"
     },
     "cachem": {
       "Package": "cachem",
@@ -649,6 +649,16 @@
         "vctrs"
       ],
       "Hash": "8b331e659e67d757db0fcc28e689c501"
+    },
+    "here": {
+      "Package": "here",
+      "Version": "1.0.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "rprojroot"
+      ],
+      "Hash": "24b224366f9c2e7534d2344d10d59211"
     },
     "highr": {
       "Package": "highr",
@@ -1207,6 +1217,16 @@
       ],
       "Hash": "75a01be060d800ceb14e32c666cacac9"
     },
+    "rprojroot": {
+      "Package": "rprojroot",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "1de7ab598047a87bba48434ba35d497d"
+    },
     "rstudioapi": {
       "Package": "rstudioapi",
       "Version": "0.14",
@@ -1514,7 +1534,7 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.6.2",
+      "Version": "0.6.3",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -1524,7 +1544,7 @@
         "lifecycle",
         "rlang"
       ],
-      "Hash": "a745bda7aff4734c17294bb41d4e4607"
+      "Hash": "d0ef2856b83dc33ea6e255caf6229ee2"
     },
     "viridisLite": {
       "Package": "viridisLite",
