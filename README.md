@@ -53,6 +53,7 @@ install.packages(c("rmarkdown", "renv"))
 Nach dem installieren der Pakete den Befehl `renv::restore()` im Directory ausführen.
 
 ![](images/latex_image.jpeg)
+
 `Quelle: Universität Bamberg`
 
 ---
