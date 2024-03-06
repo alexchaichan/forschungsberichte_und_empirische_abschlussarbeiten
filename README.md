@@ -46,7 +46,6 @@ Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/inde
 
 Außerdem wird empfohlen mit [renv](https://rstudio.github.io/renv/articles/renv.html) zu arbeiten.
 
-
 ```{r}
 install.packages(c("rmarkdown", "renv"))
 ```
@@ -69,17 +68,17 @@ Es gibt keine allgemein gültigen Regeln für das Abfassen von Forschungsberic
 
 - Die Arbeit muss ein Inhaltsverzeichnis und ein Literaturverzeichnis enthalten.
 
-- Beachten Sie die formalen Regeln für die Zitation! Zitationen sollen den Lesenden das Ver- ständnis erleichtern und die Lesenden sollen die Quellen Ihrer Argumentation leicht nachvoll-
+- Beachten Sie die formalen Regeln für die Zitation! Zitationen sollen den Lesenden das Verständnis erleichtern und die Lesenden sollen die Quellen Ihrer Argumentation leicht nachvoll-
 ziehen können, ohne dass der Lesefluss unterbrochen wird.
 
 - Erstellen Sie ein vollständiges und übersichtliches Literaturverzeichnis!
 
 - Die Arbeit kann ein Abbildungs- und ein Tabellenverzeichnis sowie einen Anhang enthalten. Die Seitennummerierung der Arbeit bezieht den Anhang nicht mit ein.
 
-- Gliedern Sie Ihre Arbeit nach nachvollziehbaren Kriterien mit verschiedenen Abstraktionsni- veaus! Machen Sie es den Lesenden leicht, Ihren Argumenten zu folgen und bereiten Sie den
+- Gliedern Sie Ihre Arbeit nach nachvollziehbaren Kriterien mit verschiedenen Abstraktionsniveaus! Machen Sie es den Lesenden leicht, Ihren Argumenten zu folgen und bereiten Sie den
 Lesenden durch einen präzisen und interessanten Schreibstil ein Lesevergnügen.
 
-- Der Argumentationsgang muss immer auf die Forschungsfrage bezogen sein. Er folgt einem klaren und durchgängigen „roten Faden“. Exkurse sind deutlich zu machen (z.B. mit spezifi- schem Titel, spezifischer Formatierung oder indem die entsprechenden Passagen in Fußnoten geschrieben werden).
+- Der Argumentationsgang muss immer auf die Forschungsfrage bezogen sein. Er folgt einem klaren und durchgängigen „roten Faden“. Exkurse sind deutlich zu machen (z.B. mit spezifischem Titel, spezifischer Formatierung oder indem die entsprechenden Passagen in Fußnoten geschrieben werden).
 
 <br/>
 <br/>
@@ -112,7 +111,7 @@ bei groben Verstößen: 1 Note Abzug</td>
   </tr>
   <tr>
     <td class="tg-0pky">klare Fragestellung</td>
-    <td class="tg-0pky">In der Einleitung muss deutlich werden, wo- rum es in der Arbeit genau geht.</td>
+    <td class="tg-0pky">In der Einleitung muss deutlich werden, worum es in der Arbeit genau geht.</td>
     <td class="tg-0pky">bei unklarer Fragestellung muss die Arbeit überarbeitet werden</td>
   </tr>
     <tr>
@@ -125,7 +124,7 @@ bei fehlender Beantwortung der Frage muss die Arbeit überarbeitet werden</td>
   </tr>
     <tr>
     <td class="tg-0pky">Einleitung</td>
-    <td class="tg-0pky">umfasst die Fragestellung mit Herleitung, Be- gründung ihrer Relevanz und die kurze Darstellung des Aufbaus der Arbeit</td>
+    <td class="tg-0pky">umfasst die Fragestellung mit Herleitung, Begründung ihrer Relevanz und die kurze Darstellung des Aufbaus der Arbeit</td>
     <td class="tg-0pky">bei fehlender Fragestellung muss die Arbeit überarbeitet werden</td>
   </tr>
     <tr>
@@ -138,7 +137,7 @@ Abzug bis zu einer Note, wenn relevante Teile des Forschungsfeldes fehlen</td>
   </tr>
     <tr>
     <td class="tg-0pky">Hypothesen</td>
-    <td class="tg-0pky">müssen aus der Theorie abgeleitet und empi- risch prüfbar sein</td>
+    <td class="tg-0pky">müssen aus der Theorie abgeleitet und empirisch prüfbar sein</td>
     <td class="tg-0pky">Abzug bis zu einer Note</td>
   </tr>
     <tr>
@@ -155,5 +154,3 @@ Unterstützung der Darstellung durch angemessene Grafiken, Tabellen und Abbildu
   </tr>
 </tbody>
 </table>
-
-
