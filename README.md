@@ -12,6 +12,7 @@ Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgeset
 [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 
 ![](images/rmarkdown_alison_horst.png)
+
 `Quelle: https://github.com/allisonhorst/stats-illustrations`
 
 # Installationsanleitung
@@ -20,7 +21,15 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 
 [LaTeX](https://www.latex-project.org/get/)
 
-[R](https://cran.r-project.org/mirrors.html)
+**R 4.3.0**
+
+- [Windows](https://cran.r-project.org/bin/windows/base/old/4.3.0/)
+- [OS X](https://cran.r-project.org/bin/macosx/big-sur-arm64/base/R-4.3.0-arm64.pkg)
+
+Zur Kontrolle der unterschiedlichen R-Versionen empfiehlt sich für
+
+- [Linux - renv](https://github.com/jcrodriguez1989/renv-installer)
+- [OS X - rig](https://github.com/r-lib/rig)
 
 [R-Studio](https://www.rstudio.com/products/rstudio/download/#download) oder eine beliebig andere [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
 
@@ -31,15 +40,14 @@ Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
 brew install --cask basictex
 brew install texlive
 
-# r + rstudio
-brew install r
+# rstudio
 brew install --cask rstudio
 ```
 
 ## Installation via [pacman](https://wiki.archlinux.org/title/pacman)
 
 ```{bash}
-sudo pacman -S texinfo texlive-core texlive-latexextra texlive-science r
+sudo pacman -S texinfo texlive-core texlive-latexextra texlive-science
 ```
 
 Sowie das Paket [markdown](https://cran.r-project.org/web/packages/markdown/index.html)
