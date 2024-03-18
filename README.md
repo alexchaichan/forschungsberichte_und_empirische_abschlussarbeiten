@@ -17,7 +17,7 @@ Grundkenntnisse in R, sowie das Arbeiten mit Markdown-Dateien werden vorausgeset
 
 # Installationsanleitung
 
-Follgende Programme werden benötigt um das Skript zum laufen zu bringen.
+Follgende Programme werden benötigt um das Script zum laufen zu bringen.
 
 [LaTeX](https://www.latex-project.org/get/)
 
